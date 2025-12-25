@@ -1,11 +1,3 @@
-import os
-print("------------------------------------------------")
-print("PYTHON IS RUNNING FROM:", os.getcwd())
-print("DOES TEMPLATES EXIST here?:", os.path.exists('templates'))
-if os.path.exists('templates'):
-    print("FILES INSIDE TEMPLATES:", os.listdir('templates'))
-print("------------------------------------------------")
-
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
